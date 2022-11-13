@@ -505,3 +505,23 @@ b {
 .spacer > a {
   text-decoration: none;
 }
+
+.event-names {
+  font-weight: 700;
+}
+
+.orange {
+  background-color: rgb(255, 199, 95);
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.green {
+  background-color: rgb(145, 253, 145);
+}
+
+.blue {
+  background-color: rgb(27, 164, 255);
+}
