@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>About Us</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body class="landing bg2">
+    <header>
+      <!-- navbar -->
+      <button
+        class="mobile-nav-toggle"
+        id="mobileButton"
+        aria-controls="primary-navigation"
+      >
+        <span class="sr-only" aria-expanded="false">Menu</span>
+      </button>
+      <nav>
+        <ul
+          id="primary-navigation"
+          data-something="false"
+          class="primary-navigation flex underline-indicators"
+        >
+          <li>
+            <a
+              class="uppercase text-color letter-spacing-2 ff-sans-cond"
+              href="index.html"
+              >Home</a
+            >
+          </li>
+          <li aria-selected="true" class="active list-center">
+            <a class="uppercase letter-spacing-2 ff-sans-cond" href="about.html"
+              >About us</a
+            >
+          </li>
+          <li>
+            <a
+              class="uppercase letter-spacing-2 ff-sans-cond"
+              href="classes.html"
+              >Classes</a
+            >
+          </li>
+          <li>
+            <a
+              class="uppercase letter-spacing-2 ff-sans-cond"
+              href="register.html"
+              >Register</a
+            >
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle uppercase letter-spacing-2 ff-sans-cond"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Language
+            </a>
+            <ul class="dropdown-menu uppercase ff-sans-serif">
+              <li>
+                <button id="eng" class="button uppercase">English</button>
+              </li>
+              <li><button id="jp" class="button jp">日本語</button></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div class="jp center cards">
+        <div class="">
+          <h1 class="eng">What is E-play?</h1>
+        </div>
+        <div class="about-info">
+          <img src="./assets/Teacher.png" />
+          <p class="jp">
+            “English（英語）“のE 音楽を“流す“、“遊ぶ“、そして“芝居“のplay
+            子どもの想像力を働かせることを大切に、英語で自分を表現することを目指します。
+          </p>
+        </div>
+        <div class="about-info">
+          <img src="./assets/studying.png" />
+          <p class="jp">
+            そんな遊び心のある英語教室という意味を込め、Eを柔らかみのある筆記体のEにしました。
+          </p>
+          <p class="jp">
+            <a href="classes.html">クラスの種類やレッスン内容へ</a> ←クリック
+          </p>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <script src="script.js" async defer></script>
+      <!-- JavaScript Bundle with Popper -->
+      <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"
+      ></script>
+    </footer>
+  </body>
+</html>
