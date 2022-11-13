@@ -15,12 +15,12 @@
   --white: 0 0% 100%;
   --offwhite: 45 29% 97%;
 }
-img {
+/* img {
   max-width: 30%;
 
   background-color: transparent;
   filter: drop-shadow(10px 10px 10px #2c2c2c);
-}
+} */
 
 .eng {
   font-family: var(--ff-sans-cond);
@@ -88,6 +88,14 @@ html {
   font-weight: 700;
 }
 
+.left {
+  text-align: left;
+}
+
+h6 {
+  color: hsl(var(--black) / 0.7);
+}
+
 .sr-only {
   position: absolute;
   width: 1px;
@@ -110,12 +118,6 @@ html {
 
 /* primary header */
 
-.logo {
-  /* clamp: takes three values. Min Value, growth, Max. Value  */
-  margin: 1.5rem clamp(1.5rem, 5vw, 3.5rem);
-  width: 20%;
-}
-
 .primary-header {
   justify-content: space-between;
   align-items: center;
@@ -128,7 +130,7 @@ html {
   margin: 0;
   padding: 0;
   justify-content: center;
-  background: hsl(var(--offwhite) / 0.15);
+  /* background: hsl(var(--offwhite) / 0.15); */
 }
 
 .primary-navigation[data-something="true"] {
@@ -154,8 +156,8 @@ html {
 @supports (backdrop-filter: blur(1rem)) {
   .primary-navigation {
     /* adds a frosted glass effect on the */
-    background: hsl(var(--white) / 0.2);
-    backdrop-filter: blur(1rem);
+    /* background: hsl(var(--white) / 0.2);
+    backdrop-filter: blur(1rem); */
   }
 }
 
@@ -318,7 +320,7 @@ main {
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  margin-top: 1rem;
+  margin-block: 2rem;
 }
 
 .bg {
@@ -332,6 +334,16 @@ main {
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.logo {
+  display: grid;
+  width: 20%;
+  margin: auto;
+  justify-self: center;
+  align-self: center;
+  justify-content: center;
+  align-content: center;
 }
 
 @media (min-width: 35em) {
@@ -392,11 +404,12 @@ main {
   background-image: linear-gradient(
     -35deg,
     hsl(var(--black)) 0%,
-    hsl(var(--white)) 50%,
-    lightblue 100%
+    hsl(var(--white)) 30%,
+    rgb(130, 224, 255) 80%,
+    rgb(255, 179, 0) 100%
   );
-  -webkit-animation: AnimateBG 20s ease infinite;
-  animation: AnimateBG 20s ease infinite;
+  -webkit-animation: AnimateBG 30s ease infinite;
+  animation: AnimateBG 30s ease infinite;
 }
 
 @-webkit-keyframes AnimateBG {
@@ -424,13 +437,13 @@ main {
 }
 
 /* about */
-.about-info {
+/* .about-info {
   margin: 1rem;
   padding: 1rem;
   background-color: hsl(var(--silver) / 0.7);
   border-radius: 10px;
   box-shadow: 2px 2px 57px 2px rgba(0, 0, 0, 0.2);
-}
+} */
 
 .about-info > p > a:visited {
   color: hsl(var(--black));
@@ -480,4 +493,15 @@ main {
 
 a:any-link {
   color: hsl(var(--black));
+}
+b {
+  font-size: 3rem;
+}
+
+.spacer {
+  margin-top: 1rem;
+}
+
+.spacer > a {
+  text-decoration: none;
 }
