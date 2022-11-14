@@ -85,6 +85,10 @@ html {
   font-family: var(--ff-sans-normal);
 }
 
+.ff-700{
+  font-weight: 700;
+}
+
 .jp {
   font-family: var(--ff-jp);
   font-weight: 700;
@@ -634,4 +638,11 @@ input[type="checkbox"]:checked + label {
 
 .jpform{
   margin-bottom: 1rem;
+}
+
+/* access */
+
+.map{
+  margin: 5rem auto;
+  box-shadow: 10px 10px 10px;
 }

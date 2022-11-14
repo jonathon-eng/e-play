@@ -84,6 +84,8 @@ function hideContent(parent, content) {
     .forEach((item) => panel.setAttribute("hidden", true));
 }
 
+
+
 // const jp_toggle = document.getElementById("jp");
 // const eng_toggle = document.getElementById("eng");
 // const eng_text = document.getElementById("eng-text");
