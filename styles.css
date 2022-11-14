@@ -127,11 +127,12 @@ h6 {
 
 .primary-navigation {
   -gap: clamp(1.5rem, 5vw, 3.5rem);
-  --underline-gap: 2rem;
+  --underline-gap: .5rem;
   list-style: none;
   margin: 0;
   padding: 0;
   justify-content: center;
+  margin-bottom: .5rem;
   /* background: hsl(var(--offwhite) / 0.15); */
 }
 
