@@ -15,6 +15,13 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
   </head>
 
   <body class="landing bg2">
@@ -88,49 +95,116 @@
       </nav>
     </header>
 
-    <main>
+    <main id="main" aria-hidden="true">
       <div class="main-container">
         <h1 class="center jp">選択クラス</h1>
-        <div class="flex class-cards">
-          <div class="class orange">
-            <p class="event-names">Kids</p>
-            <p class="event-names">ルーム</p>
-            <p>年中•年長</p>
-          </div>
-          <div class="class yellow">
-            <p class="event-names">Aルーム</p>
-            <p>小学１•２年生</p>
-          </div>
-          <div class="class green">
-            <p class="event-names">Bルーム</p>
-            <p>小学３•４年生</p>
-          </div>
-          <div class="class blue">
-            <p class="event-names">Cルーム</p>
-            <p>小学５•６年生</p>
-          </div>
+        <div class="flex class-cards" role="tablist" aria-label="class list">
+          <button
+            aria-selected="true"
+            class="class orange"
+            aria-controls="kids-tab"
+            role="tab"
+          >
+            <span class="sr-only" tabindex="0">Slider title</span>
+            <span class="class-names">Kidsルーム</span><br />
+            <span class="subtext">年中•年長</span>
+          </button>
+          <button
+            aria-selected="false"
+            class="class yellow"
+            aria-controls="a-tab"
+            role="tab"
+          >
+            <span class="sr-only" tabindex="-1">Slider title</span>
+            <span class="prevent-select class-names">Aルーム</span><br />
+            <span class="prevent-select subtext">小学１•２年生</span>
+          </button>
+          <button
+            aria-selected="false"
+            class="class green"
+            aria-controls="b-tab"
+            role="tab"
+          >
+            <span class="sr-only" tabindex="-1">Slider title</span>
+            <span class="class-names">Bルーム</span><br />
+            <span class="subtext">小学３•４年生</span>
+          </button>
+          <button
+            aria-selected="false"
+            class="class blue"
+            aria-controls="c-tab"
+            role="tab"
+          >
+            <span class="sr-only" tabindex="-1">Slider title</span>
+            <span class="class-names">Cルーム</span><br />
+            <span class="subtext">小学５•６年生</span>
+          </button>
         </div>
 
-        <div class="class-container">
-          <h1>Example</h1>
+        <article
+          class="class-container"
+          id="kids-tab"
+          role="tabpanel"
+          tabindex="0"
+        >
+          <h1>Example 1</h1>
           <p>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus
             praesentium, tenetur doloremque cupiditate aut exercitationem
             blanditiis sunt inventore magnam maxime laboriosam, deserunt officia
             ipsam quis earum? Natus, iusto vero. Architecto?
           </p>
-        </div>
+        </article>
+        <article
+          hidden
+          class="class-container"
+          id="a-tab"
+          role="tabpanel"
+          tabindex="0"
+        >
+          <h1>Example 2</h1>
+          <p>
+            This is an example Lorem ipsum dolor sit, amet consectetur
+            adipisicing elit. Delectus praesentium, tenetur doloremque
+            cupiditate aut exercitationem blanditiis sunt inventore magnam
+            maxime laboriosam, deserunt officia ipsam quis earum? Natus, iusto
+            vero. Architecto?
+          </p>
+        </article>
+        <article
+          hidden
+          class="class-container"
+          id="b-tab"
+          role="tabpanel"
+          tabindex="0"
+        >
+          <h1>Example 3</h1>
+          <p>
+            Another example Lorem ipsum dolor sit, amet consectetur adipisicing
+            elit. Delectus praesentium, tenetur doloremque cupiditate aut
+            exercitationem blanditiis sunt inventore magnam maxime laboriosam,
+            deserunt officia ipsam quis earum? Natus, iusto vero. Architecto?
+          </p>
+        </article>
+        <article
+          hidden
+          class="class-container"
+          id="c-tab"
+          role="tabpanel"
+          tabindex="0"
+        >
+          <h1>Example 4</h1>
+          <p>
+            Yet another example Lorem ipsum dolor sit, amet consectetur
+            adipisicing elit. Delectus praesentium, tenetur doloremque
+            cupiditate aut exercitationem blanditiis sunt inventore magnam
+            maxime laboriosam, deserunt officia ipsam quis earum? Natus, iusto
+            vero. Architecto?
+          </p>
+        </article>
       </div>
     </main>
 
-    <footer>
-      <script src="script.js" async defer></script>
-      <!-- JavaScript Bundle with Popper -->
-      <script
-        src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
-        crossorigin="anonymous"
-      ></script>
-    </footer>
+    <footer></footer>
   </body>
 </html>

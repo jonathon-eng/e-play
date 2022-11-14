@@ -3,12 +3,14 @@
 
 /* Japanese fonts */
 @import url("https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+Antique:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;700&family=Oswald:wght@400;700&display=swap");
 
 :root {
   --ff-serif: "Josefin Sans", sans-serif;
   --ff-sans-cond: "Oswald", sans-serif;
   --ff-sans-normal: "Roboto Condensed", sans-serif;
-  --ff-jp: "Zen Kaku Gothic Antique", "Oswald", sans-serif;
+  --ff-jp: "M PLUS Rounded 1c", sans-serif;
+  /* --ff-jp: "Zen Kaku Gothic Antique", "Oswald", sans-serif; */
 
   --black: 230 35% 7%;
   --silver: 231 10% 90%;
@@ -506,7 +508,7 @@ b {
   text-decoration: none;
 }
 
-.event-names {
+.class-names {
   font-weight: 700;
 }
 
@@ -524,4 +526,18 @@ b {
 
 .blue {
   background-color: rgb(27, 164, 255);
+}
+
+.subtext {
+  font-size: 1rem;
+}
+
+.prevent-select {
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+}
+
+span {
+  pointer-events: none;
 }
