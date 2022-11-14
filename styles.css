@@ -346,6 +346,7 @@ main {
   align-self: center;
   justify-content: center;
   align-content: center;
+  filter: drop-shadow(10px 10px 10px #2c2c2c);
 }
 
 .bg2 {
@@ -441,6 +442,7 @@ main {
   border-radius: 10px;
   box-shadow: 2px 2px 7px 2px rgba(0, 0, 0, 0.1);
   margin-top: 1rem;
+  margin-bottom: 4rem;
   padding: 1rem;
 }
 
