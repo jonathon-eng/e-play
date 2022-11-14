@@ -88,7 +88,46 @@
       </nav>
     </header>
 
-    <main></main>
+    <main class="register">
+      <form class="formcenter">
+
+        <p class="jp jpform">クラスを選んで下さい</p>
+        <div class="selectors">
+          <ul class="formbuttons">
+            <li>
+              <input type="checkbox" id="check_1" name="check_1" value="check_1">
+              <label for="check_1">Kidsルーム</label>
+            </li>
+            <li>
+              <input type="checkbox" id="check_2" name="check_2" value="check_2">
+              <label for="check_2">Aルーム</label>
+            </li>
+            <li>
+              <input type="checkbox" id="check_3" name="check_3" value="check_3">
+              <label for="check_3">Bルーム</label>
+            </li>
+            <li>
+              <input type="checkbox" id="check_4" name="check_4" value="check_4">
+              <label for="check_4">Cルーム</label>
+            </li>
+          </ul>
+        </div>
+
+        <p class="jp jpform">ご希望の日付を選んで下さい</p>
+
+        <input type="date" class="calendar">
+
+        <p class="jp jpform">メール</p>
+            <input class="email" autocomplete="off"  placeholder="メール" type="email">
+       
+        
+
+        <button class="btn btn-primary" type="submit">登録</button>
+    </form>
+
+
+
+    </main>
 
     <footer>
       <script src="script.js" async defer></script>
